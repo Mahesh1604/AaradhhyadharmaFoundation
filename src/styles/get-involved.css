@@ -1,0 +1,129 @@
+:root {
+  --gi-accent: #0d6efd;
+  --gi-accent-2: #20c997;
+}
+
+.gi-container {
+  margin-top: 5.5rem;
+  margin-bottom: 2rem;
+}
+
+.gi-hero {
+  background: linear-gradient(135deg, rgba(13,110,253,.08), rgba(32,201,151,.08));
+  border: 1px solid rgba(0,0,0,.05);
+  border-radius: 16px;
+  padding: 2rem;
+}
+
+.gi-hero-content {
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.gi-hero-icon {
+  font-size: 2.75rem;
+  color: var(--gi-accent);
+  background: #fff;
+  border-radius: 50%;
+  padding: 0.5rem;
+  box-shadow: 0 6px 14px rgba(13,110,253,0.15);
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.gi-hero-subtitle {
+  color: #6c757d;
+  margin: 0;
+}
+
+.gi-card {
+  border: none !important;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  border-radius: 14px !important;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.gi-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.12);
+}
+
+.gi-section-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+}
+
+.gi-form-control {
+  border: 2px solid #e9ecef !important;
+  border-radius: 10px !important;
+  padding: 0.8rem 1rem !important;
+  transition: border-color .2s ease, box-shadow .2s ease;
+}
+
+.gi-form-control:focus {
+  border-color: var(--gi-accent) !important;
+  box-shadow: 0 0 0 .2rem rgba(13,110,253,.15) !important;
+}
+
+.gi-btn-primary {
+  background: linear-gradient(135deg, var(--gi-accent), #0bb) !important;
+  border: none !important;
+  box-shadow: 0 6px 14px rgba(13,110,253,.25);
+}
+
+.gi-btn-primary:hover {
+  filter: brightness(1.03);
+  box-shadow: 0 8px 18px rgba(13,110,253,.35);
+}
+
+.gi-icon-circle {
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #f8f9fa;
+  color: var(--gi-accent);
+}
+
+@media (max-width: 576px) {
+  .gi-hero { padding: 1.25rem; }
+  .gi-hero-icon { font-size: 2.2rem; }
+}
+
+/* Auto-apply styles inside GI pages without extra classes */
+.gi-container .card {
+  border: none !important;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  border-radius: 14px !important;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.gi-container .card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.12);
+}
+
+.gi-container .form-control,
+.gi-container .form-select {
+  border: 2px solid #e9ecef !important;
+  border-radius: 10px !important;
+  padding: 0.8rem 1rem !important;
+  transition: border-color .2s ease, box-shadow .2s ease;
+}
+.gi-container .form-control:focus,
+.gi-container .form-select:focus {
+  border-color: var(--gi-accent) !important;
+  box-shadow: 0 0 0 .2rem rgba(13,110,253,.15) !important;
+}
+
+.gi-container .btn.btn-primary {
+  background: linear-gradient(135deg, var(--gi-accent), #0bb) !important;
+  border: none !important;
+  box-shadow: 0 6px 14px rgba(13,110,253,.25);
+}
+.gi-container .btn.btn-primary:hover {
+  filter: brightness(1.03);
+  box-shadow: 0 8px 18px rgba(13,110,253,.35);
+}

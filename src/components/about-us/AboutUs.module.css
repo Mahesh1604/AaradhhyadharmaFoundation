@@ -1,0 +1,140 @@
+.pageContainer {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  padding: 100px 0 50px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.section {
+  background: white;
+  border-radius: 16px;
+  padding: 3.5rem;
+  margin-bottom: 2.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  color: #2c3e50;
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+  border-radius: 2px;
+}
+
+.subtitle {
+  color: #6c757d;
+  font-size: 1.25rem;
+  text-align: center;
+  margin-bottom: 4rem;
+  line-height: 1.7;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 2.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.cardTitle {
+  color: #2c3e50;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.cardTitle svg {
+  color: #4facfe;
+  font-size: 1.75rem;
+}
+
+.cardText {
+  color: #6c757d;
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+.iconContainer {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  color: white;
+  font-size: 1.75rem;
+  box-shadow: 0 5px 15px rgba(79, 172, 254, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .pageContainer {
+    padding: 80px 0 40px;
+  }
+  
+  .section {
+    padding: 2rem 1.5rem;
+  }
+  
+  .title {
+    font-size: 2.2rem;
+  }
+  
+  .subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+  }
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animateFadeIn {
+  animation: fadeIn 0.8s ease-out forwards;
+}
